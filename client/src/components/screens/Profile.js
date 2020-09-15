@@ -87,22 +87,23 @@ const Profile  = ()=>{
 
          
            <div style={{
+               boxSizing:"border-box",
                display:"flex",
-               justifyContent:"space-around",
+               justifyContent:"space-evenly",
               
            }}>
-               <div >
+               <div  >
                    <img style={{width:"160px",height:"160px",borderRadius:"80px"}}
                    src={state?state.pic:"loading"}
                    />
                  
-               </div>
+                </div>
                <div style={{margin:"10px"}}>
                    <h4>{state?state.name:"loading"}</h4>
                    <h5>{state?state.email:"loading"}</h5>
                    <div style={{display:"flex",justifyContent:"space-between",width:"108%"}}>
-                       <h6 onClick={postDetails}>{mypics.length} posts</h6>
-                       <h6>{state?state.followers.length:"0"} followers</h6>
+                       <h6 >{mypics.length} posts</h6>
+                       <h6>{state?state.followers.length:"0"} followers</h6><br/>
                        <h6>{state?state.following.length:"0"} following</h6>
                    </div>
 

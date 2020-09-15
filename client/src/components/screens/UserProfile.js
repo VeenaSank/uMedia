@@ -93,10 +93,10 @@ const Profile  = ()=>{
                    src={userProfile.user.pic}
                    />
                </div>
-               <div style={{margin:"10px"}}>
+               <div style={{margin:"10px",flexWrap:"initial",justifyContent:"space-around"}}>
                    <h4>{userProfile.user.name}</h4>
                    <h5>{userProfile.user.email}</h5>
-                   <div style={{display:"flex",justifyContent:"space-between",width:"108%"}}>
+                   <div style={{display:"flex",flexWrap:"wrap",justifyContent:"space-evenly",width:"90%"}}>
                        <h6>{userProfile.posts.length} posts</h6>
                        <h6>{userProfile.user.followers.length} followers</h6>
                        <h6>{userProfile.user.following.length} following</h6>

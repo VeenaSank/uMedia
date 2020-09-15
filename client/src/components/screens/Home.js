@@ -93,6 +93,7 @@ const Home  = ()=>{
               console.log(err)
           })
     }
+    
 
     const deletePost = (postid)=>{
         fetch(`/deletepost/${postid}`,{
@@ -151,8 +152,9 @@ const Home  = ()=>{
                                     })
                                 }
                                 <form onSubmit={(e)=>{
-                                    e.preventDefault()
+                                    
                                     makeComment(e.target[0].value,item._id)
+                                    
                                 }}>
                                   <input type="text" placeholder="add a comment" />  
                                 </form>

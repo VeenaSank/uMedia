@@ -60,11 +60,11 @@ const SignIn  = ()=>{
                 Login
             </button>
             <h5>
-                <Link to="/signup">Dont have an account ?</Link>
+                <Link to="/signup">Dont have an account?</Link>
             </h5>
-            <h6>
-                <Link to="/reset">Forgot password ?</Link>
-            </h6>
+           {/* <h6>
+                <Link to="/reset">Forgot password?</Link>
+           </h6>*/}
     
         </div>
       </div>

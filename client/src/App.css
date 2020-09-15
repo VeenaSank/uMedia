@@ -33,13 +33,18 @@ a{
 .gallery{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .item{
   width: 30%;
+  height: 30%;
+  margin :auto;
 }
 
+.home {
+  margin:26px auto;
+}
 .home-card{
   max-width: 500px;
   height: max-content;
